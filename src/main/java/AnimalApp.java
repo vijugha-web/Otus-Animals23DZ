@@ -1,7 +1,8 @@
-import Animals.Animal;
-import Animals.AnimalType;
-import Animals.Command;
-import Animals.factory.AnimalFactory;
+import animals.Animal;
+import animals.AnimalType;
+import animals.Command;
+import animals.factory.AnimalFactory;
+import animals.input.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,7 +19,7 @@ public class AnimalApp {
 
         do{
 
-            currentCommand = Animals.input.CommandInput.getCommand(scanner);
+            currentCommand = CommandInput.getCommand(scanner);
 
             if (currentCommand == Command.LIST){
                 if (animals.isEmpty()){
@@ -30,13 +31,13 @@ public class AnimalApp {
             } else if (currentCommand == Command.ADD){
 
 
-                AnimalType animalType = Animals.input.AnimalTypeInput.getAnimalType(scanner);
+                AnimalType animalType = AnimalTypeInput.getAnimalType(scanner);
                 Animal animal = factory.create(animalType);
 
-                animal.setName(Animals.input.NameInput.getName(scanner));
-                animal.setAge(Animals.input.AgeInput.getAge(scanner));
-                animal.setWeight(Animals.input.WeightInput.getWeight(scanner));
-                animal.setColor(Animals.input.ColorInput.getColor(scanner));
+                animal.setName(NameInput.getName(scanner));
+                animal.setAge(AgeInput.getAge(scanner));
+                animal.setWeight(WeightInput.getWeight(scanner));
+                animal.setColor(ColorInput.getColor(scanner));
 
                 animals.add(animal);
 

@@ -1,10 +1,10 @@
-package Animals.factory;
+package animals.factory;
 
-import Animals.Animal;
-import Animals.AnimalType;
-import Animals.birds.Duck;
-import Animals.pets.Cat;
-import Animals.pets.Dog;
+import animals.Animal;
+import animals.AnimalType;
+import animals.birds.Duck;
+import animals.pets.Cat;
+import animals.pets.Dog;
 
 
 public class AnimalFactory {

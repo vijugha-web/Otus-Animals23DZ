@@ -1,4 +1,4 @@
-package Animals.input;
+package animals.input;
 
 import java.util.Scanner;
 
@@ -10,7 +10,7 @@ public class WeightInput {
         do {
             System.out.println("Введите вес животного в кг: ");
             animalWeightInput = scanner.next();
-            if (Animals.utils.NumberUtils.isNotNumber(animalWeightInput)){
+            if (animals.utils.NumberUtils.isNotNumber(animalWeightInput)){
                 System.out.println("Вес животного должен быть указан числом!");
             } else {
                 weight = Integer.parseInt(animalWeightInput);
@@ -18,7 +18,7 @@ public class WeightInput {
                     System.out.println("Вес животного должен быть больше 0!");
                 }
             }
-        } while (Animals.utils.NumberUtils.isNotNumber(animalWeightInput) || weight ==0);
+        } while (animals.utils.NumberUtils.isNotNumber(animalWeightInput) || weight ==0);
         return Integer.parseInt(animalWeightInput);
     }
 }

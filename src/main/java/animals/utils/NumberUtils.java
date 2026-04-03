@@ -1,4 +1,4 @@
-package Animals.utils;
+package animals.utils;
 
 public class NumberUtils {
 

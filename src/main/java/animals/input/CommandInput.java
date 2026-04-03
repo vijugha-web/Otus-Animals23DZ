@@ -1,6 +1,6 @@
-package Animals.input;
+package animals.input;
 
-import Animals.Command;
+import animals.Command;
 
 import java.util.Scanner;
 

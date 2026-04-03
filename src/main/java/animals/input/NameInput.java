@@ -1,4 +1,4 @@
-package Animals.input;
+package animals.input;
 
 import java.util.Scanner;
 
