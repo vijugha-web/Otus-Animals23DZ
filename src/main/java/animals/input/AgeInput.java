@@ -16,6 +16,15 @@ public class AgeInput {
                 if (age == 0){
                     System.out.println("Возраст животного должен быть больше 0!");
                 }
+                  try {
+                    age = Integer.parseInt(animalAgeInput);
+                    if (age == 0) {
+                        System.out.println("Возраст животного должен быть больше 0!");
+                    }
+                } catch (NumberFormatException e) {
+                    System.out.println("Слишком большое число! Введите возраст от 1 до 99.");
+                    age = 0;
+                }
             }
         } while (animals.utils.NumberUtils.isNotNumber(animalAgeInput) || age == 0);
         return Integer.parseInt(animalAgeInput);
